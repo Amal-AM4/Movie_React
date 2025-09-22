@@ -1,10 +1,20 @@
-import './App.css'
+import "./App.css";
 
 function App() {
-
   return (
-    <div></div>
-  )
+    <>
+      <Text display="What's up" test="ger" />
+      <Text display={"Hello"}></Text>
+    </>
+  );
 }
 
-export default App
+function Text({display, test}) {
+  return (
+    <div>
+      <p>{display} - {test}</p>
+    </div>
+  );
+}
+
+export default App;
