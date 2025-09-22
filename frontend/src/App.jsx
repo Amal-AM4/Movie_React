@@ -1,20 +1,24 @@
 import "./App.css";
+import MovieCard from "./components/MovieCard";
 
 function App() {
+
+  const movieNo = 2;
+
   return (
     <>
-      <Text display="What's up" test="ger" />
-      <Text display={"Hello"}></Text>
+
+      { movieNo === 1 ? (
+        <MovieCard movie={{ title: "Cid moosa", release_data: "2001" }}/>
+      ) : (
+        <MovieCard movie={{ title: "Lokha", release_data: "2010" }}/>
+      ) }
+
+      
+      
     </>
   );
 }
 
-function Text({display, test}) {
-  return (
-    <div>
-      <p>{display} - {test}</p>
-    </div>
-  );
-}
 
 export default App;
