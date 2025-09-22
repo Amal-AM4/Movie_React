@@ -1,20 +1,13 @@
 import "./App.css";
-import MovieCard from "./components/MovieCard";
+import Home from "./pages/Home";
 
 function App() {
 
-  const movieNo = 2;
 
   return (
     <>
 
-      { movieNo === 1 ? (
-        <MovieCard movie={{ title: "Cid moosa", release_data: "2001" }}/>
-      ) : (
-        <MovieCard movie={{ title: "Lokha", release_data: "2010" }}/>
-      ) }
-
-      
+    <Home></Home>
       
     </>
   );
